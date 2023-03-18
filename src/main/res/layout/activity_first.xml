@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/da">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_tianshu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="坚持天数 :2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <TextView
+            android:id="@+id/zuichang"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:text="最长天数:5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="请您选择日期"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="180sp"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_guanjianzi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="每日关键字"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_guanjianzi"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="请输入关键字"
+            android:inputType="textCapWords"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_zongjie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="每日总结"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_zongjie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="请输入总结"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_act_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看以前日记"/>
+    <Button
+        android:id="@+id/btn_act_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加本地"/>
+    <Button
+        android:id="@+id/btn_act_addwai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加外存储"/>
+    <Button
+        android:id="@+id/btn_act_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取外存储"/>
+    <TextView
+        android:id="@+id/tv_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+</LinearLayout>

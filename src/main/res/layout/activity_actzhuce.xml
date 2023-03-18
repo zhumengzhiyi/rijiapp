@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/da">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_xuehao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="请输入学号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="用户名"
+            android:inputType="textCapWords"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_shouji"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_layout_height"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="班级"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"/>
+        <EditText
+            android:id="@+id/et_banji"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="请输入班级"
+            android:inputType="textCapWords"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注     册"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删     除"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size"/>
+    <Button
+        android:id="@+id/btn_updata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更    改"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size"/>
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查    看"
+        android:textColor="@color/black"
+        android:textSize="@dimen/button_font_size"/>
+
+</LinearLayout>
